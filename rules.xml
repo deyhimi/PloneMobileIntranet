@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Include barceloneta's backend.xml for backend theming. 
+<rules css:if-not-content="body.viewpermission-view, body.viewpermission-none">
+  <xi:include href="++theme++barceloneta/backend.xml" />
+</rules>-->
+
+<!-- Include theme for frontend theming. -->
+
+<rules  css:if-content="body.viewpermission-view, body.viewpermission-none"
+        xmlns="http://namespaces.plone.org/diazo"
+        xmlns:css="http://namespaces.plone.org/diazo/css"
+        xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+        <theme href="index.html" />
+        <notheme css:if-not-content="#visual-portal-wrapper" />
+
+            <rules css:if-content="#portal-top">
+
+            <replace css:content-children="#content" css:theme-children="#plonearticles" />
+            <replace css:content-children=".portlet.portletNavigationTree" css:theme-children="#foldernav" />
+            <replace css:content-children="#portal-searchbox" css:theme-children="#search" />
+            <replace css:content-children=".relatedItems" css:theme-children="#related" />
+            <replace css:content-children="#edit-bar" css:theme-children="#plonebar" />
+            <drop css:content="div#clear-space-before-relatedItemBox.visualClear" />
+
+            </rules>
+
+</rules>
+
+
