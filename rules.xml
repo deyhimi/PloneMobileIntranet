@@ -19,12 +19,15 @@
             <replace css:content-children="#content" css:theme-children="#plonearticles" />
             <replace css:content-children=".portlet.portletNavigationTree" css:theme-children="#foldernav" />
             <replace css:content-children="#portal-searchbox" css:theme-children="#search" />
+            <drop css:content="div label"/>
+            <drop css:content="div.searchSection"/>
+            <drop css:content="div#portal-advanced-search"/>
             <replace css:content-children=".relatedItems" css:theme-children="#related" />
             <replace css:content-children="#edit-bar" css:theme-children="#plonebar" />
             <drop css:content="div#clear-space-before-relatedItemBox.visualClear" />
 
             </rules>
-
+ 
 </rules>
 
 
