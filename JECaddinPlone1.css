@@ -1,3 +1,37 @@
+/*
+The purpose of this secondary style sheet is to control Plone elements brought in by the CMS
+*/
+
+/*
+search box in header
+*/
+
+div#search {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+div.LSBox {
+  display: flex;
+  width: 80%;
+  justify-content:center;
+  align-items:center;
+}
+
+input#searchGadget {
+  width: 80%;
+}
+
+div form#searchGadget_form {
+  display: flex;
+  justify-content: center;
+}
+
+
+/*end of code for search box and search banner*/
+
 .portletHeader {
   font-size: 80px;
   font-weight: bold;
@@ -42,6 +76,35 @@ div#related div#relatedItemBox header {
   transition: 0.3s;
   font-weight: bold;
 }
+  /* END OF RELATED BOX */
+
+    /* BREADCRUMBS */
+
+    div#breadCrumbs {
+      font-weight: bold;
+      font-size: 2em;
+    }
+    div#breadCrumbs div.container ol {
+      list-style: none;
+    }
+    div#breadCrumbs div.container ol li {
+      display: inline;
+    }
+    div#breadCrumbs div.container ol li+li:before {
+      content: "/\00a0";
+      padding: 8px;
+    }
+    div#breadCrumbs ol a {
+    text-decoration: none;
+    }
+    div#breadCrumbs ol a:hover {
+    color: #ffaa00;
+    }
+
+    /* END OF BREADCRUMBS */
+
+  /* BEING ARTICLE STYLING */
+
 article#CenterPanelID.ArticleCLASS {
   max-width: 900px !important;
   margin: auto !important;
@@ -72,6 +135,11 @@ article#CenterPanelID.ArticleCLASS {
   font-size: 3em;
 }
 
+  /* end of center panel article styling 
+  end of non-device specific styling
+  */
+
+
 /*
 iOS Styles only 
 iOS Styles only
@@ -84,16 +152,7 @@ iOS Styles only
   content: "⟩";
   color:  #ffaa00;
 }
-/* SEARCH BOX */
-#RightPanelID #search {
-  padding-left: 30px;
-  font-size: 40px;
-  font-weight: bold;
-  color: #f1f1f1;
-}
-  #RightPanelID #search input {
-  font-size: 40px;
-}
+
   /* RELATED BOX */
 }
 
@@ -124,14 +183,5 @@ all other devices styles
         }
         */     
 
-/* SEARCH BOX */
-#RightPanelID #search {
-    padding-left: 30px;
-    font-size: 25px;
-    color: #f1f1f1;
-    font-weight: bold;
-}
-  #RightPanelID #search input {
-    font-size: 25px;
-}
+
 }

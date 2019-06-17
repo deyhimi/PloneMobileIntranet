@@ -25,7 +25,14 @@
             <replace css:content-children=".relatedItems" css:theme-children="#related" />
             <replace css:content-children="#edit-bar" css:theme-children="#plonebar" />
             <drop css:content="div#clear-space-before-relatedItemBox.visualClear" />
-
+            <drop css:content="dl.actionMenu" />
+            <drop css:content="p#rss-subscription" />
+            <drop css:content="form#searchform div.visualClear" />
+            <drop css:content="cite.documentLocation" />
+            <drop css:content="ol.searchResults span.documentModified" />
+            <drop css:content="ol.searchResults span.documentPublished" />
+            <replace css:theme-children="div#breadCrumbs" css:content-children="nav#portal-breadcrumbs"  />
+            <drop css:content="span#breadcrumbs-you-are-here" />
             </rules>
  
 </rules>

@@ -4,7 +4,7 @@ body {
   background-color: rgb(230, 230, 230);
 }
 #RoyalHeader {
-  margin-bottom: 70px;
+  margin-bottom: 20px;
 }
 h1#CoName {
   text-align: center;
@@ -20,6 +20,20 @@ h1#CoName {
   top: 25px;
   right: 50px;
 }
+
+div#searchBanner {
+  display:flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content:center;
+  align-items:center;
+  background-image: url("./art/searchBackground2.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 350px;
+}
+
+
 nav {
   text-transform: uppercase;
 }
