@@ -1,155 +1,117 @@
+.portletHeader {
+  font-size: 80px;
+  font-weight: bold;
+  padding-left: 0px;
+  }
 /*
-iOS Styles only iOS Styles only iOS Styles only iOS Styles only iOS Styles only iOS Styles only 
-iOS Styles only iOS Styles only iOS Styles only iOS Styles only iOS Styles only iOS Styles only 
+.navTree { }
+*/
+.navTreeLevel0 {
+  padding-left: 20px;
+  }
+  .navTreeLevel1 {
+  padding-left: 20px;
+  }
+  .navTreeLevel2 {
+  padding-left: 20px;
+  }
+  #foldernav ul, #foldernav li {
+    list-style-type:none;
+}
+#foldernav li {
+  border-top: 1px solid #fdfdfd;
+}
+  /* RELATED BOX */
+  #RightPanelID .relatedItems {
+  padding-left: 30px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+#RightPanelID .relatedItems li {
+  padding-left: 60px;
+  font-size: 40px;
+  color: #f1f1f1;
+}
+div#related div#relatedItemBox header {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 40px;
+  color: #f1f1f1;
+  display: block;
+  transition: 0.3s;
+  font-weight: bold;
+}
+article#CenterPanelID.ArticleCLASS {
+  max-width: 900px !important;
+  margin: auto !important;
+}
+#CenterPanelID, #viewlet-above-content-title, #viewlet-below-content-title, #viewlet-above-content-body, #content-core, #viewlet-below-content-body, .documentDescription, .description, .documentFirstHeading
+{
+  max-width: 900px !important;
+  margin: auto !important;
+}
+#CenterPanelID p, #CenterPanelID li, #CenterPanelID h1, #CenterPanelID h2, #CenterPanelID h3, #CenterPanelID h4, #CenterPanelID h5, #CenterPanelID h6, #CenterPanelID div {
+    margin-bottom: .5em;
+}
+
+#CenterPanelID p.discreet.croppedDescription {
+    font-size: 1em;
+}
+#CenterPanelID p img {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+#CenterPanelID h1.documentFirstHeading {
+  padding: .5em 2em 2em 2em;
+  font-weight: bold;
+  font-size: 3em;
+}
+
+/*
+iOS Styles only 
+iOS Styles only
 */
 
 @supports (-webkit-overflow-scrolling: touch) {
     /* CSS specific to iOS devices */ 
 
-.portletHeader {
-font-size: 80px;
-font-weight: bold;
-padding-left: 0px;
-}
-
-/*
-.navTree { }
-*/
-
-.navTreeLevel0 {
-padding-left: 20px;
-}
-
-.navTreeLevel1 {
-padding-left: 20px;
-}
-
-.navTreeLevel2 {
-padding-left: 20px;
-}
-
-/*
-.navTreeItem { }
-.visualNoMarker { }
-.navTreeFolderish { }
-.navTreeCurrentNode {background: #ffaa00; }
-*/
-
 .navTreeCurrentNode>a:after {
-    content: "⟩";
-    color:  #ffaa00;
+  content: "⟩";
+  color:  #ffaa00;
 }
-
-#foldernav ul, #foldernav li {
-    list-style-type:none;
-/*            border-top: 1px solid #fdfdfd; */
-}
-
-#foldernav li {
-    border-top: 1px solid #fdfdfd;
-}
-
-
 /* SEARCH BOX */
-
 #RightPanelID #search {
-    padding-left: 30px;
-    font-size: 40px;
-    font-weight: bold;
-    color: #f1f1f1;
-
+  padding-left: 30px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
 }
- 
   #RightPanelID #search input {
-    font-size: 40px;
-    
-  }
-
-
-
+  font-size: 40px;
+}
   /* RELATED BOX */
-
-#RightPanelID .relatedItems {
-    padding-left: 30px;
-    font-size: 40px;
-    font-weight: bold;
-    color: #f1f1f1;
 }
- 
-  #RightPanelID .relatedItems li {
-    padding-left: 60px;
-    font-size: 40px;
-    color: #f1f1f1;
-  }
-
-  div#related div#relatedItemBox header {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 40px;
-    color: #f1f1f1;
-    display: block;
-    transition: 0.3s;
-    font-weight: bold;
-  }
-
-}
-
 
 /*
-all other devices styles all other devices styles all other devices styles all other devices styles 
-all other devices styles all other devices styles all other devices styles all other devices styles 
+all other devices styles
+all other devices styles
 */
-
 
 @supports not (-webkit-overflow-scrolling: touch) {
     /* CSS for other than iOS devices */ 
 
-        .portletHeader {
-            font-size: 80px;
-            font-weight: bold;
-            padding-left: 0px;
-        }
-        
-        /*
-        .navTree { }
-        */
-        
-        .navTreeLevel0 {
-           padding-left: 20px;
-        }
-        
-        .navTreeLevel1 {
-           padding-left: 20px;
-        }
-        
-        .navTreeLevel2 {
-            padding-left: 20px;
-        }
-        
-        /*
-        .navTreeItem { }
-        .visualNoMarker { }
-        .navTreeFolderish { }
-        .navTreeCurrentNode {background: #ffaa00; }
-        */
-        
-        .navTreeCurrentNode>a:after {
-            content: "⟩";
-            color:  #ffaa00;
-            font-size: 200%;
-        }
-        
-        #foldernav ul, #foldernav li {
-            list-style-type:none;
-/*            border-top: 1px solid #fdfdfd; */
-        }
+.navTreeCurrentNode>a:after {
+  content: "⟩";
+  color:  #ffaa00;
+  font-size: 200%;
+}
 
-        #foldernav li {
-            border-top: 1px solid #fdfdfd;
-        }
-
-
-/* PLONE TOOL BAR */
+        /* PLONE TOOL BAR
 
         .plone-toolbar-submenu-header, #folderDefaultPageDisplay {
             color: #e829fa;
@@ -160,50 +122,16 @@ all other devices styles all other devices styles all other devices styles all o
             color: #29b8fa;
             padding-left: 80px;
         }
-        
+        */     
 
 /* SEARCH BOX */
-
 #RightPanelID #search {
     padding-left: 30px;
     font-size: 25px;
     color: #f1f1f1;
     font-weight: bold;
 }
-
-
   #RightPanelID #search input {
     font-size: 25px;
-
-  }
-
-
-
-    /* RELATED BOX */
-
-#RightPanelID .relatedItems {
-    padding-left: 30px;
-    font-size: 40px;
-    font-weight: bold;
-    color: #f1f1f1;
 }
- 
-  #RightPanelID .relatedItems li {
-    padding-left: 60px;
-    font-size: 40px;
-    color: #f1f1f1;
-  }
-
-  div#related div#relatedItemBox header {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #f1f1f1;
-    display: block;
-    transition: 0.3s;
-    font-weight: bold;
-  }
-
-
-     
 }

@@ -1,39 +1,71 @@
-
-/*
-iOS Styles only iOS Styles only iOS Styles only iOS Styles only iOS Styles only iOS Styles only 
-iOS Styles only iOS Styles only iOS Styles only iOS Styles only iOS Styles only iOS Styles only 
-*/
-
-
-@supports (-webkit-overflow-scrolling: touch) {
-  /* CSS specific to iOS devices */ 
-
-
 body {
-    font-family: "Roboto", Verdana, Arial, sans-serif;
-    font-size: 100%;
-    background-color: rgb(230, 230, 230);
+  font-family: "Roboto", Verdana, Arial, sans-serif;
+  font-size: 100%;
+  background-color: rgb(230, 230, 230);
 }
-
 #RoyalHeader {
   margin-bottom: 70px;
 }
-
 h1#CoName {
   text-align: center;
   padding-top: 10px;
 }
+.brow#LeftButton {
+  position: absolute;
+  top: 20px;
+  left: 50px;
+}
+.brow#RightButton {
+  position: absolute;
+  top: 25px;
+  right: 50px;
+}
+nav {
+  text-transform: uppercase;
+}
+.visualClear {
+  margin-bottom: 100px;
+  padding-bottom: 100px;
+}
+.LeftPanelCLASS a:hover {
+  color: #ffaa00;
+}
+.LeftBoxlet {
+  background-color: #666;
+}
 
+.RightPanelCLASS {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #333333;
+  overflow-x: hidden;
+  padding-top: 100px;
+  transition: 0.5s;
+}
+.RightPanelCLASS a:hover {
+  color: #ffaa00;
+}
+.RightBoxlet {
+  background-color: #666;
+}
+
+/*
+iOS Styles only
+iOS Styles only
+*/
+@supports (-webkit-overflow-scrolling: touch) {
+  /* CSS specific to iOS devices */ 
 img#HeadPic {
   display: block;
   max-width: 400px;
   margin-left: auto;
   margin-right: auto;
 }
-
-
 .ArticleCLASS {
-
   /*  padding: 5%; */
     width: 90%;
     height: 100%;
@@ -42,19 +74,9 @@ img#HeadPic {
     background-color: rgb(255, 255, 255);
     padding: 5% 5% 10% 5%;
   }
-
 .ArticleCLASS figure img {
 width: 90%;
-
 }
-
-
-article {
-
-  
-
-}
-
 .ArticleCLASS h1 {
   text-align: center;
   margin-left: auto;
@@ -62,7 +84,6 @@ article {
   max-width: 60%;
   font-size: 300%;
 }
-
 .ArticleCLASS p, .ArticleCLASS ul, .ArticleCLASS ol, .ArticleCLASS dl {
   font-size: 300%;
   max-width: 100%;
@@ -70,38 +91,13 @@ article {
   margin-right: auto;
 
 }
-
 /* HEADER AND BROW --- HEADER AND BROW --- HEADER AND BROW --- HEADER AND BROW */
-
 .brow svg {
     width: 80px;
     height: 80px;
 }
 
-.brow#LeftButton {
-  position: absolute;
-  top: 20px;
-  left: 50px;
-}
-
-.brow#RightButton {
-  position: absolute;
-  top: 25px;
-  right: 50px;
-}
-
-nav {
-  text-transform: uppercase;
-}
-
-
-.visualClear {
-  margin-bottom: 100px;
-  padding-bottom: 100px;
-}
-
 /* LEFT SIDE PANEL --- LEFT SIDE PANEL --- LEFT SIDE PANEL --- LEFT SIDE PANEL */
-
 .LeftPanelCLASS {
   height: 100%;
   width: 0;
@@ -114,7 +110,6 @@ nav {
   padding-top: 50px;
   transition: 0.5s;
 }
-
 .LeftPanelCLASS a {
   padding: 0px 8px 8px 32px;
   text-decoration: none;
@@ -124,10 +119,6 @@ nav {
   transition: 0.3s;
 }
 
-.LeftPanelCLASS a:hover {
-  color: #ffaa00;
-}
-
 .LeftPanelCLASS .closebtn {
   position: absolute;
   top: 0;
@@ -135,7 +126,6 @@ nav {
   font-size: 96px;
   margin-left: 50px;
 }
-
 .LeftPanelCLASS h1 {
   padding: 8px 8px 0px 32px;
   text-decoration: none;
@@ -145,15 +135,6 @@ nav {
   transition: 0.3s;
 }
 
-
-
-.LeftBoxlet {
-
-  background-color: #666;
-
-}
-
-
 .LeftBoxlet a {
   padding: 0px 8px 8px 48px;
   text-decoration: none;
@@ -162,26 +143,7 @@ nav {
   display: block;
   transition: 0.3s;
 }
-
-
 /* RIGHT SIDE PANEL --- RIGHT SIDE PANEL --- RIGHT SIDE PANEL --- RIGHT SIDE PANEL */
-
-
-
-.RightPanelCLASS {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  background-color: #333333;
-  overflow-x: hidden;
-  padding-top: 100px;
-  transition: 0.5s;
-
-}
-
 .RightPanelCLASS a {
   padding: 8px 8px 8px 48px;
   text-decoration: none;
@@ -190,11 +152,6 @@ nav {
   display: block;
   transition: 0.3s;
 }
-
-.RightPanelCLASS a:hover {
-  color: #ffaa00;
-}
-
 .RightPanelCLASS .closebtn {
   position: absolute;
   top: 0;
@@ -202,8 +159,6 @@ nav {
   font-size: 96px;
   margin-right: 50px;
 }
-
-
 .RightPanelCLASS h1 {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
@@ -212,14 +167,6 @@ nav {
   display: block;
   transition: 0.3s;
 }
-
-
-.RightBoxlet {
-
-  background-color: #666;
-
-}
-
 .RightBoxlet a {
   padding: 0px 8px 8px 96px;
   text-decoration: none;
@@ -228,7 +175,6 @@ nav {
   display: block;
   transition: 0.3s;
 }
-
 .RightPanelCLASS p {
   padding: 8px 8px 8px 48px;
   text-decoration: none;
@@ -237,32 +183,15 @@ nav {
   display: block;
   transition: 0.3s;
 }
-
 }
 
 /*
-all other devices styles all other devices styles all other devices styles all other devices styles 
-all other devices styles all other devices styles all other devices styles all other devices styles 
+all other devices styles
+all other devices styles
 */
-
 
 @supports not (-webkit-overflow-scrolling: touch) {
   /* CSS for other than iOS devices */ 
-
-  body {
-    font-family: "Roboto", Verdana, Arial, sans-serif;
-    font-size: 100%;
-    background-color: rgb(230, 230, 230);
-}
-
-#RoyalHeader {
-  margin-bottom: 70px;
-}
-
-h1#CoName {
-  text-align: center;
-  padding-top: 10px;
-}
 
 img#HeadPic {
   display: block;
@@ -270,10 +199,7 @@ img#HeadPic {
   margin-left: auto;
   margin-right: auto;
 }
-
-
 .ArticleCLASS {
-
   /*  padding: 5%; */
     width: 900px;
     height: 100%;
@@ -284,68 +210,29 @@ img#HeadPic {
     background-color: rgb(255, 255, 255);
     padding: 5% 5% 10% 5%;
   }
-
-figure img {
+.ArticleCLASS figure img {
 width: 65%;
 margin-left: auto;
 margin-right: auto;
-
 }
-
-
 .ArticleCLASS h1 {
   text-align: center;
 /*  max-width: 65%; */
   margin-left: auto;
   margin-right: auto;
 }
-
-
-
 .ArticleCLASS p, .ArticleCLASS ul, .ArticleCLASS ol, .ArticleCLASS dl {
   font-size: 100%;
 /*  max-width: 75%;*/
   margin-left: auto;
   margin-right: auto;
-
 }
-
-
-
-
-
-
 /* HEADER AND BROW --- HEADER AND BROW --- HEADER AND BROW --- HEADER AND BROW */
-
 .brow svg {
     width: 40px;
     height: 40px;
 }
-
-.brow#LeftButton {
-  position: absolute;
-  top: 20px;
-  left: 50px;
-}
-
-.brow#RightButton {
-  position: absolute;
-  top: 25px;
-  right: 50px;
-}
-
-nav {
-  text-transform: uppercase;
-}
-
-
-.visualClear {
-  margin-bottom: 100px;
-  padding-bottom: 100px;
-}
-
 /* LEFT SIDE PANEL --- LEFT SIDE PANEL --- LEFT SIDE PANEL --- LEFT SIDE PANEL */
-
 .LeftPanelCLASS {
   height: 100%;
   width: 0;
@@ -358,7 +245,6 @@ nav {
   padding-top: 20px;
   transition: 0.5s;
 }
-
 .LeftPanelCLASS a {
   padding: 0px 8px 8px 32px;
   text-decoration: none;
@@ -368,10 +254,6 @@ nav {
   transition: 0.3s;
 }
 
-.LeftPanelCLASS a:hover {
-  color: #ffaa00;
-}
-
 .LeftPanelCLASS .closebtn {
   position: absolute;
   top: 0;
@@ -379,7 +261,6 @@ nav {
   font-size: 48px;
   margin-left: 50px;
 }
-
 .LeftPanelCLASS h1 {
   padding: 8px 8px 0px 32px;
   text-decoration: none;
@@ -389,15 +270,6 @@ nav {
   transition: 0.3s;
 }
 
-
-
-.LeftBoxlet {
-
-  background-color: #666;
-
-}
-
-
 .LeftBoxlet a {
   padding: 0px 8px 8px 48px;
   text-decoration: none;
@@ -406,26 +278,7 @@ nav {
   display: block;
   transition: 0.3s;
 }
-
-
 /* RIGHT SIDE PANEL --- RIGHT SIDE PANEL --- RIGHT SIDE PANEL --- RIGHT SIDE PANEL */
-
-
-
-.RightPanelCLASS {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  background-color: #333333;
-  overflow-x: hidden;
-  padding-top: 100px;
-  transition: 0.5s;
-
-}
-
 .RightPanelCLASS a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
@@ -434,11 +287,6 @@ nav {
   display: block;
   transition: 0.3s;
 }
-
-.RightPanelCLASS a:hover {
-  color: #ffaa00;
-}
-
 .RightPanelCLASS .closebtn {
   position: absolute;
   top: -10px;
@@ -446,8 +294,6 @@ nav {
   font-size: 48px;
   margin-right: 50px;
 }
-
-
 .RightPanelCLASS h1 {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
@@ -456,14 +302,6 @@ nav {
   display: block;
   transition: 0.3s;
 }
-
-
-.RightBoxlet {
-
-  background-color: #666;
-
-}
-
 .RightBoxlet a {
   padding: 0px 8px 8px 64px;
   text-decoration: none;
@@ -481,12 +319,4 @@ nav {
   display: block;
   transition: 0.3s;
 }
-
-
-
-
-
-
-
-
 }
