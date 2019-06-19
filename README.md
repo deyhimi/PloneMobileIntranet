@@ -1,7 +1,10 @@
 # PloneMobileIntranet
 This project is being developed by:
+
 Arash Deyhimi (arash@deyhimi.net)
+
 Patrick Wennagel (patrickw0104@gmail.com)
+
 
 Based on the open source Plone CMS platform, our goal is to develop the custom HTML, CSS, JAVASCRIPT, RULES.XML and other settings to setup Plone for the purposes of an internal company resource center Intranet.
 
