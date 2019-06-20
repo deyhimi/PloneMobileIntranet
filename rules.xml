@@ -1,21 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- Include barceloneta's backend.xml for backend theming. 
-<rules css:if-not-content="body.viewpermission-view, body.viewpermission-none">
-  <xi:include href="++theme++barceloneta/backend.xml" />
-</rules>-->
-
-<!-- Include theme for frontend theming. -->
-
-<rules  css:if-content="body.viewpermission-view, body.viewpermission-none"
+<rules 
         xmlns="http://namespaces.plone.org/diazo"
         xmlns:css="http://namespaces.plone.org/diazo/css"
-        xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-        <theme href="index.html" />
-        <notheme css:if-not-content="#visual-portal-wrapper" />
-
-            <rules css:if-content="#portal-top">
-
+        xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+        xmlns:xi="http://www.w3.org/2001/XInclude" >
+       
+        <!-- Rules file for theming backend pages -->
+        <xi:include href="backend.xml" />
+        
+        <!-- Include theme for frontend theming. -->
+        <rules css:if-content="body.frontend#visual-portal-wrapper">
+            <theme href="index.html" />
+            <copy attributes="*" css:content="body" css:theme="body" />
+            <copy attributes="*" css:theme="html" css:content="html" />
+            <!-- <after css:theme-children="head" css:content="head meta" /> --> 
             <replace css:content-children="#content" css:theme-children="#plonearticles" />
             <replace css:content-children=".portlet.portletNavigationTree" css:theme-children="#foldernav" />
             <replace css:content-children="#portal-searchbox" css:theme-children="#search" />
@@ -33,8 +32,6 @@
             <drop css:content="ol.searchResults span.documentPublished" />
             <replace css:theme-children="div#breadCrumbs" css:content-children="nav#portal-breadcrumbs"  />
             <drop css:content="span#breadcrumbs-you-are-here" />
-            </rules>
+        </rules>
  
 </rules>
-
-
