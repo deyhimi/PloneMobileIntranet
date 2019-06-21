@@ -11,12 +11,12 @@ h1#CoName {
   padding-top: 10px;
 }
 .brow#LeftButton {
-  position: absolute;
+  position: fixed;
   top: 20px;
   left: 50px;
 }
 .brow#RightButton {
-  position: absolute;
+  position: fixed;
   top: 25px;
   right: 50px;
 }
