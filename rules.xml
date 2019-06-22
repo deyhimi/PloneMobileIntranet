@@ -9,29 +9,43 @@
         <!-- Rules file for theming backend pages -->
         <xi:include href="backend.xml" />
         
-        <!-- Include theme for frontend theming. -->
+        <!-- apply our custom theme to frontend -->
         <rules css:if-content="body.frontend#visual-portal-wrapper">
             <theme href="index.html" />
             <copy attributes="*" css:content="body" css:theme="body" />
             <copy attributes="*" css:theme="html" css:content="html" />
-            <!-- <after css:theme-children="head" css:content="head meta" /> --> 
+                    <!-- <after css:theme-children="head" css:content="head meta" /> --> 
+
+            <!-- places Plone pages within our ID plonearticles -->
             <replace css:content-children="#content" css:theme-children="#plonearticles" />
+
+            <!-- places Plone navigation within our left panel -->
             <replace css:content-children=".portlet.portletNavigationTree" css:theme-children="#foldernav" />
+
+            <!-- places Plone search within our search ID div -->
             <replace css:content-children="#portal-searchbox" css:theme-children="#search" />
-            <drop css:content="div label"/>
-            <drop css:content="div.searchSection"/>
-            <drop css:content="div#portal-advanced-search"/>
+                <!-- clean up search box and search results -->
+                <drop css:content="div label"/>
+                <drop css:content="div.searchSection"/>
+                <drop css:content="div#portal-advanced-search"/>
+                <drop css:content="form#searchform div.visualClear" />
+                <drop css:content="cite.documentLocation" />
+                <drop css:content="ol.searchResults span.documentModified" />
+                <drop css:content="ol.searchResults span.documentPublished" />
+
+            <!-- places Plone related items list within our ID related -->
             <replace css:content-children=".relatedItems" css:theme-children="#related" />
+
+            <!-- places Plone tools within our ID plonebar -->
             <replace css:content-children="#edit-bar" css:theme-children="#plonebar" />
-            <drop css:content="div#clear-space-before-relatedItemBox.visualClear" />
-            <drop css:content="dl.actionMenu" />
-            <drop css:content="p#rss-subscription" />
-            <drop css:content="form#searchform div.visualClear" />
-            <drop css:content="cite.documentLocation" />
-            <drop css:content="ol.searchResults span.documentModified" />
-            <drop css:content="ol.searchResults span.documentPublished" />
+                <drop css:content="div#clear-space-before-relatedItemBox.visualClear" />
+                <drop css:content="dl.actionMenu" />
+                <drop css:content="p#rss-subscription" />
+
+            <!-- places Plone bread crumbs in our div for breadcrumbs -->
             <replace css:theme-children="div#breadCrumbs" css:content-children="nav#portal-breadcrumbs"  />
-            <drop css:content="span#breadcrumbs-you-are-here" />
+                <drop css:content="span#breadcrumbs-you-are-here" />
+
         </rules>
  
 </rules>

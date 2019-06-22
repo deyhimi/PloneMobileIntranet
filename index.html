@@ -6,6 +6,7 @@
             <title>JEC</title>
             <link rel="stylesheet" href="reset.css" />
             <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en"> 
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
             <link rel="icon" sizes="32x32" href="./art/RB-32.png">
             <link rel="stylesheet" href="JEC1.css" /> 
             <link rel="stylesheet" href="JECaddinPlone1.css" />
@@ -34,6 +35,12 @@
           </div>
     </div>
 </header> 
+
+<!-- bread crumbs below banner above article-->
+
+<div id="breadCrumbs" class="pageInfo"> </div>
+
+
 <!-- CENTER PANEL
   PLONE CONTENT PAGES - ARTICLES - DUMP IN HERE
  -->
@@ -118,15 +125,12 @@
 
 
     <footer>
-        <div id="breadCrumbs"> </div>
-    </footer>
-</body>
-<script type="text/javascript">
-//  sessionStorage.setItem('clicked', 'true');
-  var clicked = sessionStorage.getItem('clicked');
-  if (clicked == 'true') {    
-      openLeft();
-    }
-</script>
 
+      
+    </footer>
+
+<!-- run our javascript actions after page load-->
+<script type="text/javascript" src="JEC2.js"></script>
+
+</body>
 </html>

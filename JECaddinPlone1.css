@@ -80,9 +80,11 @@ div#related div#relatedItemBox header {
 
     /* BREADCRUMBS */
 
-    div#breadCrumbs {
+    div#breadCrumbs.pageInfo {
+      max-width: 900px !important;
+      margin: auto !important;
       font-weight: bold;
-      font-size: 2em;
+      font-size: 1em;
     }
     div#breadCrumbs div.container ol {
       list-style: none;
@@ -91,7 +93,8 @@ div#related div#relatedItemBox header {
       display: inline;
     }
     div#breadCrumbs div.container ol li+li:before {
-      content: "/\00a0";
+      /* content: "/\00a0"; */
+      content: ">\00a0";
       padding: 8px;
     }
     div#breadCrumbs ol a {
