@@ -10,7 +10,7 @@ div#search {
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 80%;
 }
 
 div.LSBox {
@@ -22,12 +22,22 @@ div.LSBox {
 
 input#searchGadget {
   width: 80%;
+  font-size: 1.6em;
 }
 
 div form#searchGadget_form {
   display: flex;
   justify-content: center;
 }
+
+        
+div.LSBox input.searchButton {
+  /*  padding: 10px 10px 10px 10px; */
+    height: 100%;
+    width: 17%;
+    font-size: 1.3em;
+  }
+
 
 
 /*end of code for search box and search banner*/
@@ -151,6 +161,8 @@ iOS Styles only
 @supports (-webkit-overflow-scrolling: touch) {
     /* CSS specific to iOS devices */ 
 
+
+
 .navTreeCurrentNode>a:after {
   content: "⟩";
   color:  #ffaa00;
@@ -184,7 +196,8 @@ all other devices styles
             color: #29b8fa;
             padding-left: 80px;
         }
-        */     
+        */  
+        
 
 
 }

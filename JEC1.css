@@ -1,7 +1,11 @@
 body {
   font-family: "Roboto", Verdana, Arial, sans-serif;
   font-size: 100%;
+/*  
   background-color: rgb(230, 230, 230);
+*/
+  background-image: url("./backgrounds/wall1.jpg");
+  z-index: -3;
 }
 #RoyalHeader {
   margin-bottom: 20px;
@@ -20,20 +24,17 @@ h1#CoName {
   top: 25px;
   right: 50px;
 }
-
 div#searchBanner {
   display:flex;
   margin-left: auto;
   margin-right: auto;
   justify-content:center;
   align-items:center;
-  background-image: url("./art/searchBackground2.png");
+  background-image: url("./banners/car2b.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   height: 350px;
 }
-
-
 nav {
   text-transform: uppercase;
 }
